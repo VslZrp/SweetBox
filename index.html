@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230626160700">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230628115351">
   <title>SweetBox</title>
 </head>
   <body>
@@ -14,7 +14,7 @@
   <div class="header__container">
     <a href="#" class="header__logo logo">Сладкий сундук</a>
     <div class="contacts-header header__contacts">
-      <a href="#" class="contacts-header__location">
+      <a href="https://goo.gl/maps/itKMEp6WZvxfg5nU8" target="_blank" class="contacts-header__location">
         <div class="contacts-header__location-icon">
           <img src="images/icons/location.svg" alt="location">
         </div>
@@ -23,7 +23,7 @@
           ул. Куйбышева 31
         </div>
       </a>
-      <a href="#" class="contacts-header__phone">
+      <a href="tel:88128449549" class="contacts-header__phone">
         <div class="contacts-header__phone-icon">
           <img src="images/icons/phone.svg" alt="phone">
         </div>
@@ -51,23 +51,25 @@
       </p>
       <div class="main__action-wrapper">
         <div class="common__action main__action">
-          <a href="" class="common__link main__link">Перейти в каталог</a>
+          <a data-goto=".table-shop" href="#" class="common__link main__link">Перейти в каталог</a>
         </div>
         <div class="main__label">9 различных видов на выбор</div>
       </div>
     </div>
   </div>
-  <div class="main__leaf"><img src="images/leaf-main.svg" alt=""></div>
+  <div data-prlx-mouse data-prlx-cx="100" data-prlx-a="15" class="main__leaf">
+    <img src="images/leaf-main.svg" alt="">
+  </div>
   <div class="main__berry main__berry_1">
-    <img src="images/berry.svg" alt="">
+    <img data-prlx-mouse data-prlx-a="40" src="images/berry.svg" alt="">
   </div>
   <div class="main__berry main__berry_2">
-    <img src="images/berry.svg" alt="">
+    <img data-prlx-mouse data-prlx-a="40" src="images/berry.svg" alt="">
   </div>
   <div class="main__berry main__berry_3">
-    <img src="images/berry.svg" alt="">
+    <img data-prlx-mouse data-prlx-dxr data-prlx-dyr data-prlx-a="30" src="images/berry.svg" alt="">
   </div>
-  <div class="main__background main__background-ibg">
+  <div class="main__background">
     <picture><source srcset="images/main/bg.webp" type="image/webp"><img src="images/main/bg.jpg" alt="sweet cakes"></picture>
   </div>
 </section>
@@ -77,8 +79,8 @@
       <h2>Для любых событий и дорогих вам людей</h2>
     </div>
     <div class="shop__table table-shop">
-      <a href="#" class="table-shop__item">
-        <picture><source srcset="images/products/1.webp" type="image/webp"><img src="images/products/1.jpg" alt="cake" class="table-shop__image"></picture>
+      <div class="table-shop__item">
+        <img src="images/products/1.jpg" alt="cake" class="table-shop__image" data-type="popup-1">
         <div class="table-shop__text-block">
           <div class="table-shop__name">Кремовый замок</div>
           <p class="table-shop__text">
@@ -87,11 +89,13 @@
           <div class="table-shop__price">
             <span class="table-shop__price-value">150</span><span class="table-shop__price-currency">₽/шт.</span>
           </div>
-          <div class="table-shop__action"><span>Заказать</span></div>
+          <button class="table-shop__button" data-type="popup-1">
+            Заказать
+          </button>
         </div>
-      </a>
-      <a href="#" class="table-shop__item">
-        <picture><source srcset="images/products/2.webp" type="image/webp"><img src="images/products/2.jpg" alt="cake" class="table-shop__image"></picture>
+      </div>
+      <div class="table-shop__item">
+        <img src="images/products/2.jpg" alt="cake" class="table-shop__image" data-type="popup-1">
         <div class="table-shop__text-block">
           <div class="table-shop__name">Малиновый рай</div>
           <p class="table-shop__text">
@@ -100,11 +104,13 @@
           <div class="table-shop__price">
             <span class="table-shop__price-value">150</span><span class="table-shop__price-currency">₽/шт.</span>
           </div>
-          <div class="table-shop__action"><span>Заказать</span></div>
+          <button class="table-shop__button" data-type="popup-1">
+            Заказать
+          </button>
         </div>
-      </a>
-      <a href="#" class="table-shop__item">
-        <picture><source srcset="images/products/3.webp" type="image/webp"><img src="images/products/3.jpg" alt="cake" class="table-shop__image"></picture>
+      </div>
+      <div class="table-shop__item">
+        <img src="images/products/3.jpg" alt="cake" class="table-shop__image" data-type="popup-1">
         <div class="table-shop__text-block">
           <div class="table-shop__name">Фейерверк</div>
           <p class="table-shop__text">
@@ -113,11 +119,13 @@
           <div class="table-shop__price">
             <span class="table-shop__price-value">150</span><span class="table-shop__price-currency">₽/шт.</span>
           </div>
-          <div class="table-shop__action"><span>Заказать</span></div>
+          <button class="table-shop__button" data-type="popup-1">
+            Заказать
+          </button>
         </div>
-      </a>
-      <a href="#" class="table-shop__item">
-        <picture><source srcset="images/products/4.webp" type="image/webp"><img src="images/products/4.jpg" alt="cake" class="table-shop__image"></picture>
+      </div>
+      <div class="table-shop__item">
+        <img src="images/products/4.jpg" alt="cake" class="table-shop__image" data-type="popup-1">
         <div class="table-shop__text-block">
           <div class="table-shop__name">Шоколадный мир</div>
           <p class="table-shop__text">
@@ -126,11 +134,13 @@
           <div class="table-shop__price">
             <span class="table-shop__price-value">150</span><span class="table-shop__price-currency">₽/шт.</span>
           </div>
-          <div class="table-shop__action"><span>Заказать</span></div>
+          <button class="table-shop__button" data-type="popup-1">
+            Заказать
+          </button>
         </div>
-      </a>
-      <a href="#" class="table-shop__item">
-        <picture><source srcset="images/products/5.webp" type="image/webp"><img src="images/products/5.jpg" alt="cake" class="table-shop__image"></picture>
+      </div>
+      <div class="table-shop__item">
+        <img src="images/products/5.jpg" alt="cake" class="table-shop__image" data-type="popup-1">
         <div class="table-shop__text-block">
           <div class="table-shop__name">Слезы дракона</div>
           <p class="table-shop__text">
@@ -139,11 +149,13 @@
           <div class="table-shop__price">
             <span class="table-shop__price-value">150</span><span class="table-shop__price-currency">₽/шт.</span>
           </div>
-          <div class="table-shop__action"><span>Заказать</span></div>
+          <button class="table-shop__button" data-type="popup-1">
+            Заказать
+          </button>
         </div>
-      </a>
-      <a href="#" class="table-shop__item">
-        <picture><source srcset="images/products/6.webp" type="image/webp"><img src="images/products/6.jpg" alt="cake" class="table-shop__image"></picture>
+      </div>
+      <div class="table-shop__item">
+        <img src="images/products/6.jpg" alt="cake" class="table-shop__image" data-type="popup-1">
         <div class="table-shop__text-block">
           <div class="table-shop__name">Летняя фантазия</div>
           <p class="table-shop__text">
@@ -152,11 +164,13 @@
           <div class="table-shop__price">
             <span class="table-shop__price-value">150</span><span class="table-shop__price-currency">₽/шт.</span>
           </div>
-          <div class="table-shop__action"><span>Заказать</span></div>
+          <button class="table-shop__button" data-type="popup-1">
+            Заказать
+          </button>
         </div>
-      </a>
-      <a href="#" class="table-shop__item">
-        <picture><source srcset="images/products/7.webp" type="image/webp"><img src="images/products/7.jpg" alt="cake" class="table-shop__image"></picture>
+      </div>
+      <div class="table-shop__item">
+        <img src="images/products/7.jpg" alt="cake" class="table-shop__image" data-type="popup-1">
         <div class="table-shop__text-block">
           <div class="table-shop__name">Мыс безумия</div>
           <p class="table-shop__text">
@@ -165,11 +179,13 @@
           <div class="table-shop__price">
             <span class="table-shop__price-value">150</span><span class="table-shop__price-currency">₽/шт.</span>
           </div>
-          <div class="table-shop__action"><span>Заказать</span></div>
+          <button class="table-shop__button" data-type="popup-1">
+            Заказать
+          </button>
         </div>
-      </a>
-      <a href="#" class="table-shop__item">
-        <picture><source srcset="images/products/8.webp" type="image/webp"><img src="images/products/8.jpg" alt="cake" class="table-shop__image"></picture>
+      </div>
+      <div class="table-shop__item">
+        <img src="images/products/8.jpg" alt="cake" class="table-shop__image" data-type="popup-1">
         <div class="table-shop__text-block">
           <div class="table-shop__name">Облачная сказка</div>
           <p class="table-shop__text">
@@ -178,11 +194,13 @@
           <div class="table-shop__price">
             <span class="table-shop__price-value">150</span><span class="table-shop__price-currency">₽/шт.</span>
           </div>
-          <div class="table-shop__action"><span>Заказать</span></div>
+          <button class="table-shop__button" data-type="popup-1">
+            Заказать
+          </button>
         </div>
-      </a>
-      <a href="#" class="table-shop__item">
-        <picture><source srcset="images/products/9.webp" type="image/webp"><img src="images/products/9.jpg" alt="cake" class="table-shop__image"></picture>
+      </div>
+      <div class="table-shop__item">
+        <img src="images/products/9.jpg" alt="cake" class="table-shop__image" data-type="popup-1">
         <div class="table-shop__text-block">
           <div class="table-shop__name">Темный рыцарь</div>
           <p class="table-shop__text">
@@ -191,17 +209,19 @@
           <div class="table-shop__price">
             <span class="table-shop__price-value">150</span><span class="table-shop__price-currency">₽/шт.</span>
           </div>
-          <div class="table-shop__action"><span>Заказать</span></div>
+          <button class="table-shop__button" data-type="popup-1">
+            Заказать
+          </button>
         </div>
-      </a>
-      <div class="shop__leaf shop__leaf_1">
+      </div>
+      <div data-prlx-mouse class="shop__leaf shop__leaf_1">
         <img src="images/leaf-blur.svg" alt="">
       </div>
       <div class="shop__leaf shop__leaf_2">
-        <img src="images/leaf-blur.svg" alt="">
+        <img data-prlx-mouse src="images/leaf-blur.svg" alt="">
       </div>
       <div class="shop__berry">
-        <img src="images/berry.svg" alt="">
+        <img data-prlx-mouse src="images/berry.svg" alt="">
       </div>
     </div>
   </div>
@@ -221,15 +241,19 @@
           30 минут
         </p>
       </div>
-      <div class="common__action upload__action">
-        <a href="#" class="common__link upload__link">Загрузить фотографию</a>
-      </div>
+      <button class="common__button upload__action" data-type="popup-photo">
+        Загрузить фотографию
+      </button>
     </div>
-    <div class="upload__berry"><img src="images/berry.svg" alt=""></div>
-    <div class="upload__leaf"><img src="images/leaf-blur.svg" alt=""></div>
+    <div data-prlx-mouse class="upload__berry">
+      <img src="images/berry.svg" alt="">
+    </div>
+    <div data-prlx-mouse class="upload__leaf">
+      <img src="images/leaf-blur.svg" alt="">
+    </div>
   </div>
   <div class="upload__bg-main">
-    <picture><source srcset="images/make-photo/phone.webp" type="image/webp"><img src="images/make-photo/phone.png" alt="cake photo"></picture>
+    <img data-prlx-mouse data-prlx-a="5" data-prlx-cx="400" data-prlx-cy="400" src="images/make-photo/phone.png" alt="cake photo">
   </div>
   <div class="upload__clouds-top">
     <picture><source srcset="images/make-photo/clouds-top.webp" type="image/webp"><img src="images/make-photo/clouds-top.png" alt=""></picture>
@@ -249,7 +273,7 @@
       </div>
       <ul class="confectioner__list">
         <li class="confectioner__item">
-          Проконсультирую по выбору капкейкови придумаю нестандартную идею
+          Проконсультирую по выбору капкейков и придумаю нестандартную идею
         </li>
         <li class="confectioner__item">
           Приготовлю капкейки для вашего события, которые обязательно всем
@@ -260,9 +284,9 @@
           подарок
         </li>
       </ul>
-      <div class="common__action confectioner__action">
-        <a href="#" class="common__link confectioner__link">Задать вопрос Юлии</a>
-      </div>
+      <button class="common__button confectioner__action" data-type="popup-question">
+        Задать вопрос Юлии
+      </button>
     </div>
     <div class="confectioner__image-block image-block-confectioner">
       <div class="image-block-confectioner__photo">
@@ -274,13 +298,13 @@
       <div class="image-block-confectioner__label">
         <span>ваш кондитер</span>
       </div>
-      <div class="image-block-confectioner__berry">
+      <div data-prlx-mouse data-prlx-a="30" data-prlx-cx="100" data-prlx-cy="150" class="image-block-confectioner__berry">
         <img src="images/berry.svg" alt="">
       </div>
       <div class="image-block-confectioner__leaves">
-        <img src="images/leaf-blur.svg" alt="" class="image-block-confectioner__leaf image-block-confectioner__leaf_1">
-        <img src="images/leaf-blur.svg" alt="" class="image-block-confectioner__leaf image-block-confectioner__leaf_2">
-        <img src="images/leaf-blur.svg" alt="" class="image-block-confectioner__leaf image-block-confectioner__leaf_3">
+        <img data-prlx-mouse data-prlx-a="30" data-prlx-cx="200" data-prlx-cy="300" src="images/leaf-blur.svg" alt="" class="image-block-confectioner__leaf image-block-confectioner__leaf_1">
+        <img data-prlx-mouse data-prlx-a="30" data-prlx-cx="150" data-prlx-cy="300" src="images/leaf-blur.svg" alt="" class="image-block-confectioner__leaf image-block-confectioner__leaf_2">
+        <img data-prlx-mouse data-prlx-a="30" data-prlx-cx="100" data-prlx-cy="300" src="images/leaf-blur.svg" alt="" class="image-block-confectioner__leaf image-block-confectioner__leaf_3">
       </div>
     </div>
   </div>
@@ -376,6 +400,90 @@
           </div>
         </div>
       </div>
+      <div class="reviews__slide slide-reviews swiper-slide">
+        <div class="slide-reviews__wrapper">
+          <div class="slide-reviews__text-block">
+            <div class="slide-reviews__icon">
+              <img src="images/quotes.svg" alt="quote">
+            </div>
+            <div class="slide-reviews__title">
+              «Результат дико порадовал, друзья были в восторге»
+            </div>
+            <p class="slide-reviews__text">
+              «Заказала капкейки, как подарок на новый год. Делать заказ было
+              легко и приятно, ну а результат дико порадовал, друзья были в
+              восторге. И оформление, и на вкус капкейки были просто
+              замечательные. Обязательно буду заказывать еще)) Уже строю планы,
+              чтобы попробовать все начинки. Они восхитительны!) Даже кушать
+              было жалко, такая красота!)
+            </p>
+            <a href="" class="slide-reviews__link">Читать отзыв полностью</a>
+          </div>
+          <div class="slide-reviews__image-block">
+            <div class="slide-reviews__photo">
+              <picture><source srcset="images/reviews/portrait.webp" type="image/webp"><img src="images/reviews/portrait.png" alt="photo"></picture>
+            </div>
+            <div class="slide-reviews__name">Ирина Ларионова</div>
+            <div class="slide-reviews__city">Санкт-Петербург</div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__slide slide-reviews swiper-slide">
+        <div class="slide-reviews__wrapper">
+          <div class="slide-reviews__text-block">
+            <div class="slide-reviews__icon">
+              <img src="images/quotes.svg" alt="quote">
+            </div>
+            <div class="slide-reviews__title">
+              «Результат дико порадовал, друзья были в восторге»
+            </div>
+            <p class="slide-reviews__text">
+              «Заказала капкейки, как подарок на новый год. Делать заказ было
+              легко и приятно, ну а результат дико порадовал, друзья были в
+              восторге. И оформление, и на вкус капкейки были просто
+              замечательные. Обязательно буду заказывать еще)) Уже строю планы,
+              чтобы попробовать все начинки. Они восхитительны!) Даже кушать
+              было жалко, такая красота!)
+            </p>
+            <a href="" class="slide-reviews__link">Читать отзыв полностью</a>
+          </div>
+          <div class="slide-reviews__image-block">
+            <div class="slide-reviews__photo">
+              <picture><source srcset="images/reviews/portrait.webp" type="image/webp"><img src="images/reviews/portrait.png" alt="photo"></picture>
+            </div>
+            <div class="slide-reviews__name">Ирина Ларионова</div>
+            <div class="slide-reviews__city">Санкт-Петербург</div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__slide slide-reviews swiper-slide">
+        <div class="slide-reviews__wrapper">
+          <div class="slide-reviews__text-block">
+            <div class="slide-reviews__icon">
+              <img src="images/quotes.svg" alt="quote">
+            </div>
+            <div class="slide-reviews__title">
+              «Результат дико порадовал, друзья были в восторге»
+            </div>
+            <p class="slide-reviews__text">
+              «Заказала капкейки, как подарок на новый год. Делать заказ было
+              легко и приятно, ну а результат дико порадовал, друзья были в
+              восторге. И оформление, и на вкус капкейки были просто
+              замечательные. Обязательно буду заказывать еще)) Уже строю планы,
+              чтобы попробовать все начинки. Они восхитительны!) Даже кушать
+              было жалко, такая красота!)
+            </p>
+            <a href="" class="slide-reviews__link">Читать отзыв полностью</a>
+          </div>
+          <div class="slide-reviews__image-block">
+            <div class="slide-reviews__photo">
+              <picture><source srcset="images/reviews/portrait.webp" type="image/webp"><img src="images/reviews/portrait.png" alt="photo"></picture>
+            </div>
+            <div class="slide-reviews__name">Ирина Ларионова</div>
+            <div class="slide-reviews__city">Санкт-Петербург</div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="reviews__navigation">
       <div class="reviews__button reviews__button_prev">
@@ -385,8 +493,12 @@
         <img src="images/icons/arrow.svg" alt="arrow">
       </div>
     </div>
-    <div class="reviews__berry"><img src="images/berry.svg" alt=""></div>
-    <div class="reviews__leaf"><img src="images/leaf-blur.svg" alt=""></div>
+    <div data-prlx-mouse data-prlx-a="30" data-prlx-cx="200" data-prlx-cy="200" class="reviews__berry">
+      <img src="images/berry.svg" alt="">
+    </div>
+    <div data-prlx-mouse data-prlx-a="30" data-prlx-cx="200" data-prlx-cy="200" class="reviews__leaf">
+      <img src="images/leaf-blur.svg" alt="">
+    </div>
   </div>
   <div class="reviews__clouds-bottom">
     <picture><source srcset="images/reviews/clouds-bottom.webp" type="image/webp"><img src="images/reviews/clouds-bottom.png" alt="clouds"></picture>
@@ -431,7 +543,7 @@
 </section>
 <div class="order page__order">
   <div class="order__clouds">
-    <picture><source srcset="images/make-photo/clouds-top.webp" type="image/webp"><img src="images/make-photo/clouds-top.png" alt=""></picture>
+    <picture><source srcset="images/contact/clouds-top.webp" type="image/webp"><img src="images/contact/clouds-top.png" alt=""></picture>
   </div>
   <div class="order__container">
     <div class="form-order order__form">
@@ -441,31 +553,33 @@
       <div class="form-order__sub-title">
         Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания
       </div>
-      <div class="form-order__input-wrapper">
-        <input tabindex="1" type="tel" class="req form-order__input" placeholder="Номер телефона">
-        <button tabindex="2" type="submit" class="form-order__button">
-          Сделать заказ
-        </button>
-      </div>
-      <div class="form-order__conditions">
-        <p>
-          <input checked="checked" type="checkbox" name="conditions" value="yes" class="req form-order__conditions-input">
-          <span>Нажамая на кнопку, вы соглашаетесь с
-            <a href="#">условиями обработки персональных данных</a></span>
-        </p>
-      </div>
+      <form action="#" class="form-order__form">
+        <div class="form-order__input-wrapper">
+          <input tabindex="1" type="tel" class="req form-order__input" placeholder="Номер телефона" required>
+          <button tabindex="2" type="submit" class="form-order__button">
+            Сделать заказ
+          </button>
+        </div>
+        <div class="form-order__conditions">
+          <p>
+            <input checked="checked" type="checkbox" name="conditions" value="yes" class="req form-order__conditions-input" required>
+            <span>Нажамая на кнопку, вы соглашаетесь с
+              <a href="#">условиями обработки персональных данных</a></span>
+          </p>
+        </div>
+      </form>
       <div class="order__images">
         <div class="order__berry order__berry_1">
-          <img src="images/berry.svg" alt="">
+          <img data-prlx-mouse data-prlx-a="30" data-prlx-cx="200" data-prlx-cy="200" data-prlx-dyr src="images/berry.svg" alt="">
         </div>
         <div class="order__berry order__berry_2">
-          <img src="images/berry.svg" alt="">
+          <img data-prlx-mouse data-prlx-a="30" data-prlx-cx="200" data-prlx-cy="200" data-prlx-dxr data-prlx-dyr src="images/berry.svg" alt="">
         </div>
         <div class="order__leaf order__leaf_1">
-          <img src="images/leaf-blur.svg" alt="">
+          <img data-prlx-mouse data-prlx-a="30" data-prlx-cx="200" data-prlx-cy="200" src="images/leaf-blur.svg" alt="">
         </div>
         <div class="order__leaf order__leaf_2">
-          <img src="images/leaf-blur.svg" alt="">
+          <img data-prlx-mouse data-prlx-a="30" data-prlx-cx="200" data-prlx-cy="200" data-prlx-dxr src="images/leaf-blur.svg" alt="">
         </div>
       </div>
     </div>
@@ -487,17 +601,113 @@
 </footer>
 
     </div>
-
-    <div class="popup" data-popup="popup-1" data-close-overlay>
-    <div class="popup__wrapper" data-close-overlay>
-        <div class="popup__content">
-            <button class="button-close popup__close" type="button">x</button>
-            <div class="popup__body">
-                <h2>Базовый пример модального окна</h2>
-            </div>
+    <div class="popup popup-1" data-popup="popup-1" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="form-order popup__content">
+      <button class="button-close popup__close" type="button">
+        <img src="images/icons/xmark-solid.svg" alt="x">
+      </button>
+      <div class="popup__body">
+        <div class="form-order__title">
+          Чтобы сделать заказ, укажите ваш телефон
         </div>
+        <div class="form-order__sub-title">
+          Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания
+        </div>
+        <form action="#" class="form-order__form popup-shop__form">
+          <div class="form-order__input-wrapper">
+            <input tabindex="1" type="tel" class="req form-order__input" placeholder="Номер телефона" required>
+            <button tabindex="2" type="submit" class="form-order__button">
+              Сделать заказ
+            </button>
+          </div>
+          <div class="form-order__conditions">
+            <p>
+              <input checked="checked" type="checkbox" name="conditions" value="yes" class="req form-order__conditions-input" required>
+              <span>Нажамая на кнопку, вы соглашаетесь с
+                <a href="#">условиями обработки персональных данных</a></span>
+            </p>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 </div>
- <script src="js/app.min.js?_v=20230626160700"></script>
+<div class="popup" data-popup="popup-photo" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="popup__content">
+      <button class="button-close popup__close" type="button">
+        <img src="images/icons/xmark-solid.svg" alt="x">
+      </button>
+      <div class="popup__body">
+        <div class="popup__body">
+          <div class="form-order__title">
+            Добавьте фото и укажите ваш телефон
+          </div>
+          <div class="form-order__sub-title">
+            Мы перезвоним в ближайшее время, чтобы уточнить ваши пожелания
+          </div>
+          <form action="#" class="upload-form">
+            <div class="form-order__input-wrapper input__wrapper">
+              <input tabindex="1" name="file" type="file" id="input__file" class="req input input__file popup-photo__input" multiple="multiple">
+              <label for="input__file" class="input__file-button">
+                <span class="input__file-icon-wrapper"><img class="input__file-icon" src="images/icons/file-import-solid.svg" alt="Выбрать файл" width="25"></span>
+                <span class="input__file-button-text">Выберите файл</span>
+              </label>
+              <div class="input-file__text">
+                * Вы можете выбрать несколько фотографий
+              </div>
+            </div>
+            <div class="form-order__input-wrapper">
+              <input tabindex="2" type="tel" class="req form-order__input" placeholder="Номер телефона">
+              <button type="submit" class="form-order__button">
+                Отправить
+              </button>
+            </div>
+            <div class="form-order__conditions">
+              <p>
+                <input checked="checked" type="checkbox" name="conditions" value="yes" class="req form-order__conditions-input" required>
+                <span>Нажамая на кнопку, вы соглашаетесь с
+                  <a href="#">условиями обработки персональных данных</a></span>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="popup" data-popup="popup-question" data-close-overlay>
+  <div class="popup__wrapper" data-close-overlay>
+    <div class="form-order popup__content">
+      <button class="button-close popup__close" type="button">
+        <img src="images/icons/xmark-solid.svg" alt="x">
+      </button>
+      <div class="popup__body">
+        <div class="form-order__title">Укажите ваш email</div>
+        <div class="form-order__sub-title">
+          Мы ответим в ближайшее время. Если не хотите ждать, звоните
+          <a href="tel:88128449549" class="popup-question__phone-link">8 (812) 844-95-49</a>
+        </div>
+        <form action="#" class="form-question__form">
+          <div class="form-order__input-wrapper">
+            <input tabindex="1" type="email" class="req form-order__input email form-order__input_email" placeholder="Введите ваш Email" required>
+            <button tabindex="2" type="submit" class="form-order__button">
+              Отправить
+            </button>
+          </div>
+          <div class="form-order__conditions">
+            <p>
+              <input checked="checked" type="checkbox" name="conditions" value="yes" class="req form-order__conditions-input" required>
+              <span>Нажамая на кнопку, вы соглашаетесь с
+                <a href="#">условиями обработки персональных данных</a></span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ <script src="js/app.min.js?_v=20230628115351"></script>
   </body>
 </html>
